@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
-import { Header } from '@/components';
 import { cn } from '@/lib';
 import './globals.css';
 
@@ -21,17 +20,10 @@ export const metadata: Metadata = {
   description: '개발 중에 겪은 이슈와 기억하고 싶은 내용을 기록하고 정리하는 공간',
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html lang="ko" className={cn('antialiased', pretendard.variable, cascadiaMono.variable)}>
-      <body className="bg-background text-foreground">
-        <Header />
-        {children}
-      </body>
+      <body className="bg-background text-foreground">{children}</body>
     </html>
   );
 }
