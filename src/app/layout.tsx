@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
+import { Header } from '@/components';
 import { cn } from '@/lib';
 import './globals.css';
 
@@ -27,7 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={cn('antialiased', pretendard.variable, cascadiaMono.variable)}>
-      <body className="bg-background text-foreground">{children}</body>
+      <body className="bg-background text-foreground">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
