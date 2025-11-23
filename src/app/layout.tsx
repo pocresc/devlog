@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html lang="ko" className={cn('antialiased', pretendard.variable, cascadiaMono.variable)}>
-      <body className="bg-background text-foreground">{children}</body>
+      <body className="bg-background text-foreground max-h-screen min-h-svh overflow-auto">{children}</body>
     </html>
   );
 }

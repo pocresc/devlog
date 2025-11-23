@@ -1,10 +1,10 @@
-import { Header } from '@/components';
+import { Header, Main } from '@/components';
 
 export default function MainLayout({ children }: LayoutProps<'/'>) {
   return (
     <div>
       <Header />
-      <main>{children}</main>
+      <Main>{children}</Main>
     </div>
   );
 }
