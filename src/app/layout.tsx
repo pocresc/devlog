@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={`${pretendard.variable} ${cascadiaMono.variable} antialiased`}>
-      <body>{children}</body>
+      <body className="bg-background text-foreground">{children}</body>
     </html>
   );
 }
