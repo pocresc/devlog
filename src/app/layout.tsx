@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
+import { cn } from '@/lib';
 import './globals.css';
 
 const pretendard = localFont({
@@ -25,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${pretendard.variable} ${cascadiaMono.variable} antialiased`}>
+    <html lang="ko" className={cn('antialiased', pretendard.variable, cascadiaMono.variable)}>
       <body className="bg-background text-foreground">{children}</body>
     </html>
   );
