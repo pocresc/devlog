@@ -23,7 +23,7 @@ const contacts = [
 
 export default function HomePage() {
   return (
-    <Container>
+    <Container layout>
       <section>
         <Brandmark />
         <h2 className="mt-1 mb-9 text-3xl font-bold md:text-4xl">최정원 개발 블로그</h2>
