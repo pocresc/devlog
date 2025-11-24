@@ -1,21 +1,22 @@
 import { Block, Brandmark, Container, Mark, Quote } from '@/components';
 import { FaEnvelope, FaGithub, FaLinkedin, FaSquareInstagram } from 'react-icons/fa6';
+import { NICKNAME } from '@/constants';
 
 const contacts = [
   {
-    href: 'https://github.com/chresendo',
+    href: 'https://github.com/pocresc',
     icon: <FaGithub />,
   },
   {
-    href: 'https://www.linkedin.com/in/chresendo',
+    href: 'https://www.linkedin.com/in/pocresc',
     icon: <FaLinkedin />,
   },
   {
-    href: 'https://www.instagram.com/chresendo',
+    href: 'https://www.instagram.com/pocresc',
     icon: <FaSquareInstagram />,
   },
   {
-    href: 'mailto:chresendo@gmail.com',
+    href: 'mailto:pocresc@gmail.com',
     icon: <FaEnvelope />,
   },
 ] as const;
@@ -25,15 +26,15 @@ export default function HomePage() {
     <Container>
       <section>
         <Brandmark />
-        <h2 className="mt-1 mb-9 text-3xl font-bold md:text-4xl">최정원 개발 블로그 🎵</h2>
+        <h2 className="mt-1 mb-9 text-3xl font-bold md:text-4xl">최정원 개발 블로그</h2>
       </section>
 
-      <section className="grid grid-cols-[1fr] gap-6 md:grid-cols-[calc(var(--spacing)*60)_1fr] md:gap-12">
+      <section className="grid grid-cols-[1fr] gap-12 md:grid-cols-[calc(var(--spacing)*60)_1fr]">
         <div className="flex flex-wrap items-center gap-4 md:flex-col md:items-start">
           <div className="bg-accent size-32 shrink-0 rounded-full md:size-60"></div>
 
           <div className="flex flex-col gap-y-1">
-            <h3 className="text-2xl font-semibold">최정원 (chresendo)</h3>
+            <h3 className="text-2xl font-semibold">최정원 ({NICKNAME})</h3>
 
             <ul className="flex flex-wrap items-center gap-0.5 [&_svg]:size-5">
               {contacts.map(({ href, icon }) => (
