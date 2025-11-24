@@ -8,7 +8,7 @@ export type ContainerProps = Omit<ComponentProps<'div'>, 'children'> & ChildrenP
 export type ContainerConfig = { size: Record<Size, ClassValue> };
 
 export default function Container({ size, layout, className, ...props }: ContainerProps) {
-  return <div className={cn(containerVariants({ size, className }), { 'py-12 md:py-20': layout })} {...props} />;
+  return <div className={cn(containerVariants({ size, className }), { 'py-12 md:py-16': layout })} {...props} />;
 }
 
 const containerVariants = cva<ContainerConfig>('mx-auto w-full px-6', {
