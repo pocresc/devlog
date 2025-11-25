@@ -1,26 +1,6 @@
 import Link from 'next/link';
-import { Block, Brandmark, Card, Container, Mark, Quote, Tag } from '@/components';
-import { FaEnvelope, FaGithub, FaLinkedin, FaSquareInstagram } from 'react-icons/fa6';
+import { Block, Brandmark, Card, Contacts, Container, Mark, Quote, Tag } from '@/components';
 import { NICKNAME } from '@/constants';
-
-const contacts = [
-  {
-    href: 'https://github.com/pocresc',
-    icon: <FaGithub />,
-  },
-  {
-    href: 'https://www.linkedin.com/in/pocresc',
-    icon: <FaLinkedin />,
-  },
-  {
-    href: 'https://www.instagram.com/pocresc',
-    icon: <FaSquareInstagram />,
-  },
-  {
-    href: 'mailto:pocresc@gmail.com',
-    icon: <FaEnvelope />,
-  },
-] as const;
 
 const posts = [
   {
@@ -83,16 +63,7 @@ export default function HomePage() {
 
               <div className="flex flex-col gap-y-1">
                 <h3 className="text-2xl font-semibold">최정원 ({NICKNAME})</h3>
-
-                <ul className="flex flex-wrap items-center gap-0.5 [&_svg]:size-5">
-                  {contacts.map(({ href, icon }) => (
-                    <li key={href} className="transition-opacity hover:opacity-50">
-                      <a href={href} target="_blank" rel="noreferrer" className="flex items-center justify-center p-2">
-                        {icon}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+                <Contacts />
               </div>
             </div>
 
@@ -121,7 +92,7 @@ export default function HomePage() {
         </section>
       </div>
 
-      <div className="my-20 flex flex-col gap-y-12">
+      <div className="my-16 flex flex-col gap-y-12 md:my-20">
         <section>
           <h4 className="text-2xl font-semibold">📝 최근 게시글을 읽어보세요.</h4>
 

@@ -1,4 +1,4 @@
-import { Header, Main, ScrollProgressBar } from '@/components';
+import { Footer, Header, Main, ScrollProgressBar } from '@/components';
 
 export default function MainLayout({ children }: LayoutProps<'/'>) {
   return (
@@ -6,6 +6,7 @@ export default function MainLayout({ children }: LayoutProps<'/'>) {
       <Header />
       <ScrollProgressBar />
       <Main>{children}</Main>
+      <Footer />
     </div>
   );
 }
