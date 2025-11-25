@@ -50,7 +50,7 @@ const posts = [
 export default function HomePage() {
   return (
     <Container layout>
-      <div className="flex flex-col gap-y-8">
+      <div className="flex flex-col gap-y-9">
         <section>
           <Brandmark />
           <h2 className="mt-1 text-3xl font-bold md:text-4xl">최정원 개발 블로그</h2>
@@ -59,7 +59,7 @@ export default function HomePage() {
         <section>
           <div className="grid grid-cols-[1fr] gap-6 md:grid-cols-[calc(var(--spacing)*60)_1fr] md:gap-12">
             <div className="flex flex-wrap items-center gap-4 md:flex-col md:items-start">
-              <div className="bg-accent size-32 shrink-0 rounded-full md:size-60"></div>
+              <div className="bg-accent ring-primary ring-offset-background size-32 shrink-0 rounded-full ring ring-offset-4 md:size-60"></div>
 
               <div className="flex flex-col gap-y-1">
                 <h3 className="text-2xl font-semibold">최정원 ({NICKNAME})</h3>
