@@ -1,9 +1,10 @@
-import { Header, Main } from '@/components';
+import { Header, Main, ScrollProgressBar } from '@/components';
 
 export default function MainLayout({ children }: LayoutProps<'/'>) {
   return (
     <div>
       <Header />
+      <ScrollProgressBar />
       <Main>{children}</Main>
     </div>
   );

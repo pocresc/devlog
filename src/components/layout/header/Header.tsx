@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Nav from './Nav';
-import { FaMusic } from 'react-icons/fa6';
 import { Container } from '@/components';
+import { FaMusic } from 'react-icons/fa6';
 
 const HEADER_TITLE = 'poco a poco cresc.';
 
