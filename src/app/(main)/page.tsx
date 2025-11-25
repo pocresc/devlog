@@ -96,7 +96,7 @@ export default function HomePage() {
         <section>
           <h4 className="text-2xl font-semibold">📝 최근 게시글을 읽어보세요.</h4>
 
-          <ul className="my-6 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+          <ul className="my-6 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
             {posts.map(({ id, category, date, title, description }) => (
               <li key={id}>
                 <Link href="#">

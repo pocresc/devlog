@@ -27,8 +27,6 @@
   --border-secondary: var(--color-neutral-200);
 
   --card: var(--color-white);
-  --card-title: var(--color-neutral-800);
-  --card-description: var(--color-neutral-600);
   --card-shadow: rgb(from var(--color-neutral-900) r g b / 0.1) 0px 0px 0px 1px, rgb(from var(--color-neutral-900) r g b / 0.1) 0px 2px 4px;
 
   --input: var(--color-neutral-100);
@@ -56,8 +54,6 @@
   --border-secondary: var(--color-neutral-800);
 
   --card: var(--color-neutral-800);
-  --card-title: var(--color-neutral-100);
-  --card-description: var(--color-neutral-300);
   --card-shadow: rgb(from var(--color-neutral-900) r g b / 0.4) 0px 4px 12px 0px, rgb(from var(--color-white) r g calc(b - 12) / 0.1) 0px 0px 0px 1px;
 
   --input: var(--color-neutral-800);
@@ -92,8 +88,6 @@
   --color-border-secondary: var(--border-secondary);
 
   --color-card: var(--card);
-  --color-card-title: var(--card-title);
-  --color-card-description: var(--card-description);
   --shadow-card: var(--card-shadow);
 
   --color-input: var(--input);

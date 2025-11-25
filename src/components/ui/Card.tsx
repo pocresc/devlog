@@ -47,18 +47,18 @@ function CardHeader({ className, ...props }: React.ComponentProps<'div'>) {
 }
 
 function CardTitle({ className, ...props }: ComponentProps<'div'>) {
-  return <div data-slot="card-title" className={cn('text-card-title text-lg font-semibold', className)} {...props} />;
+  return <div data-slot="card-title" className={cn('font-semibold', className)} {...props} />;
 }
 
 function CardDescription({ className, ...props }: React.ComponentProps<'p'>) {
-  return <p data-slot="card-description" className={cn('text-card-description line-clamp-3 text-sm leading-normal', className)} {...props} />;
+  return <p data-slot="card-description" className={cn('text-foreground-tertiary line-clamp-3 text-xs leading-normal', className)} {...props} />;
 }
 
 function CardContent({ className, ...props }: React.ComponentProps<'div'>) {
   return <div data-slot="card-content" className={cn(className)} {...props} />;
 }
 
-const cardVariants = cva<CardConfig>('flex h-full flex-col overflow-hidden rounded-2xl hover:bg-accent transition-colors', {
+const cardVariants = cva<CardConfig>('flex h-full flex-col overflow-hidden rounded-3xl hover:bg-accent transition-colors', {
   variants: {
     variant: {
       filled: 'bg-muted border border-card-border',
