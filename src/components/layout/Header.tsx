@@ -1,9 +1,13 @@
 import Link from 'next/link';
-import Nav from './Nav';
 import { Container } from '@/components';
 import { FaMusic } from 'react-icons/fa6';
 
 const HEADER_TITLE = 'poco a poco cresc.';
+const NAV_ITEMS = [
+  { title: 'About', href: '/about' },
+  { title: 'Project', href: '/project' },
+  { title: 'Blog', href: '/blog' },
+] as const;
 
 export default function Header() {
   return (
@@ -18,7 +22,17 @@ export default function Header() {
             <h1 className="hidden tracking-tight md:block">{HEADER_TITLE}</h1>
           </Link>
 
-          <Nav />
+          <nav className="min-w-0">
+            <ul className="flex min-w-0 items-center gap-2 md:gap-4">
+              {NAV_ITEMS.map(({ title, href }) => (
+                <li key={href} className="flex min-w-0 items-center justify-center transition-opacity hover:opacity-50">
+                  <Link href={href} className="truncate p-2">
+                    {title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </Container>
     </header>
