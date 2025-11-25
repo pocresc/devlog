@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
+import { ThemeProvider } from 'next-themes';
 import { cn } from '@/lib';
 import './globals.css';
 
@@ -22,8 +23,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
-    <html lang="ko" className={cn('antialiased', pretendard.variable, cascadiaMono.variable)}>
-      <body className="bg-background text-foreground max-h-screen min-h-svh overflow-auto">{children}</body>
+    <html lang="ko" className={cn('antialiased', pretendard.variable, cascadiaMono.variable)} suppressHydrationWarning>
+      <body className="bg-background text-foreground max-h-screen min-h-svh overflow-auto">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

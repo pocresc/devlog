@@ -6,7 +6,7 @@ import { cn } from '@/lib';
 
 export type BlockProps = ChildrenWithComponentProps<'div'> & AsChildProps & VariantProps<typeof blockVariants>;
 export type BlockConfig = {
-  variant: Record<Exclude<Variant, 'ghost'>, ClassValue>;
+  variant: Record<Extract<Variant, 'filled' | 'outlined'>, ClassValue>;
   size: Record<Size, ClassValue>;
 };
 

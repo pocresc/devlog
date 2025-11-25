@@ -4,3 +4,5 @@ export type * from './Contacts';
 export { default as Contacts } from './Contacts';
 export type * from './ScrollProgressBar';
 export { default as ScrollProgressBar } from './ScrollProgressBar';
+export type * from './ThemeButton';
+export { default as ThemeButton } from './ThemeButton';

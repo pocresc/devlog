@@ -1,8 +1,9 @@
 import type { ComponentProps, ReactNode } from 'react';
 
 // Options
-export type Size = 'small' | 'default' | 'large';
-export type Variant = 'filled' | 'outlined' | 'ghost';
+export type Variant = 'primary' | 'secondary' | 'filled' | 'outlined' | 'destructive';
+export type Size = 'default' | 'small' | 'large';
+export type Shape = 'square' | 'circle';
 
 // Props
 export type ChildrenProps = {

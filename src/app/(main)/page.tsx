@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Block, Brandmark, Card, Contacts, Container, Mark, Quote, Tag } from '@/components';
+import { Block, Brandmark, Card, Contacts, Container, Quote, Tag } from '@/components';
 import { NICKNAME } from '@/constants';
 
 const posts = [
@@ -70,10 +70,10 @@ export default function HomePage() {
             <div className="flex flex-col gap-y-6">
               <Quote className="text-foreground-secondary">
                 <p className="leading-relaxed font-semibold">
-                  React와 ASP.NET Core를 기반으로 <Mark variant="secondary">웹 애플리케이션을 개발</Mark>하고 있습니다.
+                  React와 ASP.NET Core를 기반으로 <span className="text-primary underline">웹 애플리케이션을 개발</span>하고 있습니다.
                   <br />
-                  시야를 넓혀주는 <Mark variant="secondary">다양한 경험</Mark>과 깊이를 더해가는 <Mark variant="secondary">지속적인 성장</Mark>을 중요하게
-                  생각합니다.
+                  시야를 넓혀주는 <span className="text-primary underline">다양한 경험</span>과 깊이를 더해가는{' '}
+                  <span className="text-primary underline">지속적인 성장</span>을 중요하게 생각합니다.
                 </p>
               </Quote>
 
@@ -100,7 +100,7 @@ export default function HomePage() {
             {posts.map(({ id, category, date, title, description }) => (
               <li key={id}>
                 <Link href="#">
-                  <Card variant="shadow" cover={<div className="bg-muted h-full w-full"></div>} title={title} description={description}>
+                  <Card variant="shadow" cover={<div className="h-full w-full"></div>} title={title} description={description}>
                     <div className="flex flex-col gap-3">
                       <div className="flex flex-wrap items-center gap-1 text-xs">
                         {category.map((item, index) => (

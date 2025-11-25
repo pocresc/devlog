@@ -1,5 +1,6 @@
 import type { ComponentProps, ReactNode } from 'react';
 import type { ClassValue } from 'clsx';
+import type { Variant } from '@/types';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib';
 
@@ -11,7 +12,7 @@ export type CardProps = ComponentProps<'div'> &
   };
 
 export type CardConfig = {
-  variant: Record<'filled' | 'shadow', ClassValue>;
+  variant: Record<Extract<Variant, 'filled'> | 'shadow', ClassValue>;
 };
 
 export default function Card({ variant, cover, title, description, className, children, ...props }: CardProps) {
@@ -34,7 +35,7 @@ export default function Card({ variant, cover, title, description, className, ch
 }
 
 function CardCover({ className, ...props }: React.ComponentProps<'div'>) {
-  return <div data-slot="card-cover" className={cn('border-b-card-border relative h-60 w-full border-b', className)} {...props} />;
+  return <div data-slot="card-cover" className={cn('relative h-60 w-full', className)} {...props} />;
 }
 
 function CardBody({ className, ...props }: React.ComponentProps<'div'>) {
