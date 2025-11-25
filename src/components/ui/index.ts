@@ -1,3 +1,5 @@
+export type * from './Avatar';
+export { default as Avatar } from './Avatar';
 export type * from './Button';
 export { default as Button } from './Button';
 export type * from './Block';

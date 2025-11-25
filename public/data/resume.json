@@ -1,0 +1,68 @@
+{
+  "workExperience": [
+    {
+      "title": "(주)제이드소프트",
+      "siteUrl": "https://topplayerpoker.kr",
+      "logoUrl": "/images/logo/zadesoft.png",
+      "description": "모바일게임 제작 및 배급",
+      "startDate": "2024-04-02",
+      "endDate": "2025-08-25",
+      "subtitle": "프론트엔드/백엔드",
+      "tags": ["C#", "TypeScript", "Node.js", "React", "ASP.NET Core", "MySQL"],
+      "details": ["사내 운영툴 개발 및 유지보수", "NICE 본인인증 API 서버 개발 및 유지보수", "관련 데이터베이스 설계 및 관리"]
+    },
+    {
+      "title": "(주)스토익엔터테인먼트",
+      "siteUrl": "https://www.stoicent.com",
+      "logoUrl": "/images/logo/stoic.png",
+      "description": "STEAM/Mobile/VR/AR 크로스플랫폼 콘텐츠 개발",
+      "startDate": "2023-05-02",
+      "endDate": "2024-03-30",
+      "subtitle": "프론트엔드/백엔드",
+      "tags": ["C#", "TypeScript", "React", "ASP.NET Core", "MySQL"],
+      "details": ["사내 운영툴 개발 및 유지보수", "사내 WoL(Wake-on-LAN) 서비스 고도화", "트렌드 리서치 크롤러 개발 및 유지보수"]
+    }
+  ],
+  "education": [
+    {
+      "title": "그린컴퓨터아카데미",
+      "logoUrl": "/images/logo/green-academy.png",
+      "siteUrl": null,
+      "description": null,
+      "startDate": "2022-07-13",
+      "endDate": "2023-01-05",
+      "subtitle": "프로젝트기반 프론트엔드(React,Vue) 웹&앱 SW개발자 양성과정",
+      "tags": null,
+      "details": [
+        "Figma를 활용한 프로토타입 제작 및 설계 과정의 이해",
+        "UI/UX를 고려한 반응형 React 웹 애플리케이션 개발 및 컴포넌트 설계",
+        "PWA 제작을 통해 오프라인 환경에서도 동작 가능한 웹 앱 개발 경험"
+      ]
+    },
+    {
+      "title": "그린컴퓨터아카데미",
+      "logoUrl": "/images/logo/green-academy.png",
+      "siteUrl": null,
+      "description": null,
+      "startDate": "2022-06-27",
+      "endDate": "2022-07-08",
+      "subtitle": "자바(JAVA) 프로그래밍 향상과정",
+      "tags": null,
+      "details": ["Java 프로그램 실행 과정 및 기초 문법 학습", "간단한 콘솔 프로그램을 작성하며 기초 프로그래밍 경험"]
+    }
+  ],
+  "certificate": [
+    {
+      "title": "SQL 개발자",
+      "logoUrl": "/images/logo/data.png",
+      "siteUrl": null,
+      "description": null,
+      "startDate": "2025-06-27",
+      "endDate": "2025-06-27",
+      "subtitle": "한국데이터산업진흥원",
+      "tags": null,
+      "details": null
+    }
+  ],
+  "skills": ["TypeScript", "React", "Node.js", "C#", "ASP.NET Core", "MySQL"]
+}

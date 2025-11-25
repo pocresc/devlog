@@ -6,12 +6,8 @@ export type Size = 'default' | 'small' | 'large';
 export type Shape = 'square' | 'circle';
 
 // Props
-export type ChildrenProps = {
-  children: ReactNode;
-};
+export type ChildrenProps = { children: ReactNode };
+export type ClassNameProps = { className?: string };
 
 export type ChildrenWithComponentProps<T extends keyof HTMLElementTagNameMap> = Omit<ComponentProps<T>, 'children'> & ChildrenProps;
-
-export type AsChildProps = {
-  asChild?: boolean;
-};
+export type AsChildProps = { asChild?: boolean };

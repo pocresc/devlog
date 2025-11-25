@@ -15,7 +15,7 @@ export default function Block({ asChild, size, className, ...props }: BlockProps
   return <Component className={cn(blockVariants({ size, className }))} {...props} />;
 }
 
-const blockVariants = cva<BlockConfig>('rounded-xl border', {
+const blockVariants = cva<BlockConfig>('rounded-2xl border', {
   variants: {
     variant: {
       filled: 'bg-muted text-muted-foreground border-border-secondary dark:border-none',
